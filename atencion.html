@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Atencion</title>
+    <link rel="stylesheet" href="css/atencion.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="css/header-footer.css">
+</head>
+<body>
+
+    <header class="cabecera-principal">
+        <div class="contenedor-ancho">
+            
+            <div class="area-logo">
+                <a href="index.html">
+                    <img src="images/logo-2.png" alt="Logo" class="imagen-logo">
+                </a>
+            </div>
+
+            <button class="menu-toggle" id="btn-menu">
+                <i class="fa-solid fa-bars"></i>
+            </button>
+
+            <nav class="menu-navegacion" id="nav-menu">
+                <ul>
+                    <li><a href="index.html">Inicio</a></li>
+                    <li><a href="nosotros.html">Nosotros</a></li>
+                    <li><a href="carta.html">Carta</a></li>
+                    <li><a href="contactanos.html">Contactanos</a></li>
+                    <li><a href="atencion.html">Atención Personalizada</a></li>
+                </ul>
+            </nav>
+
+            <div class="area-botones">
+                <a href="https://wa.me/902434636" class="boton-wsp">
+                    <i class="fa-brands fa-whatsapp"></i>
+                    <div class="texto-wsp">
+                        <span>Delivery</span>
+                        <strong>902434636</strong>
+                    </div>
+                </a>
+                <a href="carta.html" class="boton-rojo">Mira nuestra carta</a>
+            </div>
+
+        </div>
+    </header>
+
+    <main>
+        <form class="formulario-atencion" action="mailto:miguelaguilar27@gmail.com" method="post" enctype="text/plain">
+
+            <h1>Formularios</h1>
+            <!--fieldset y Legent-->
+            
+            <fieldset>
+
+                <legend>Datos Personales</legend>
+                <label for="">Nombre</label>
+                <input type="text">
+                <br><br>
+
+                <label for="">RUC/DNI</label>
+                <input type="text" size="10" maxlength="8">
+                <br><br>
+
+                <label for="">Email</label>
+                <input type="email" name="correo" required> 
+                <br><br>
+
+                <label for="">Sexo</label>
+                <input type="radio" name="gen">Masculino
+                <input type="radio" name="gen">Femenino
+                <br><br>
+
+                <label for="">Producto deseado</label>
+                <select name="" id="">
+                    <option value=""> Elegir </option>
+                    <option value="">Buffet Alitas</option>
+                    <option value="">Buffet Hamburguesas</option>
+                    <option value="">Buffet Desayuno</option>
+                    <option value="">Buffet Criollo</option>
+                    <option value="">Otros</option>
+                </select>
+                <br><br>
+
+            </fieldset>
+            <br><br>
+
+            <fieldset>
+                    <legend>Otros</legend>
+                    <label for="">Dirección Web</label>
+                    <input type="url" placeholder="http://www...">
+                    <br><br>
+
+                    <label for="">Especifica tu producto deseado</label> <br>
+                    <textarea name="" id="" rows="5" cols="40"></textarea>
+
+            </fieldset>
+
+            <div class="botones">
+                <input type="submit" value="Enviar" class="boton-principal">
+                <input type="reset" value="Limpiar" class="boton-principal">
+            </div>
+
+        </form>
+
+    </main>
+    
+    <footer class="pie-pagina">
+
+        <div class="contenedor-pie">
+            
+            <div class="columna">
+                <h3>SOBRE NOSOTROS</h3>
+                <p>Cocinamos con pasión desde el 2014. Los mejores ingredientes para ti y tu familia en cada plato.</p>
+            </div>
+
+            <div class="columna">
+                <h3>ENLACES RÁPIDOS</h3>
+                <ul>
+                    <li><a href="index.html">Inicio</a></li>
+                    <li><a href="carta.html">Nuestra Carta</a></li>
+                    <li><a href="atencion.html">Atención Personalizada</a></li>
+                    <li><a href="contactanos.html">Contacto</a></li>
+                </ul>
+            </div>
+
+            <div class="columna">
+                <h3>SÍGUENOS</h3>
+                <div class="redes-sociales">
+                    <a href="https://facebook.com/KFCperu"><i class="fa-brands fa-facebook"></i></a>
+                    <a href="https://instagram.com/kfc.peru"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="https://www.tiktok.com/@kfc.pe"><i class="fa-brands fa-tiktok"></i></a>
+                </div>
+            </div>
+
+        </div>
+        
+        <div class="barra-final">
+            <p>© 2026 La Casa de las Alitas. Todos los derechos reservados.</p>
+        </div>
+
+    </footer>
+</body>
+</html>

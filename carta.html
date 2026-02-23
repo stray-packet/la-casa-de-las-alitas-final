@@ -1,0 +1,366 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Carta</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="css/header-footer.css">
+</head>
+
+<body>
+
+    <header class="cabecera-principal">
+        <div class="contenedor-ancho">
+            
+            <div class="area-logo">
+                <a href="index.html">
+                    <img src="images/logo-2.png" alt="Logo" class="imagen-logo">
+                </a>
+            </div>
+
+            <button class="menu-toggle" id="btn-menu">
+                <i class="fa-solid fa-bars"></i>
+            </button>
+
+            <nav class="menu-navegacion" id="nav-menu">
+                <ul>
+                    <li><a href="index.html">Inicio</a></li>
+                    <li><a href="nosotros.html">Nosotros</a></li>
+                    <li><a href="carta.html">Carta</a></li>
+                    <li><a href="contactanos.html">Contactanos</a></li>
+                    <li><a href="atencion.html">Atención Personalizada</a></li>
+                </ul>
+            </nav>
+
+            <div class="area-botones">
+                <a href="https://wa.me/902434636" class="boton-wsp">
+                    <i class="fa-brands fa-whatsapp"></i>
+                    <div class="texto-wsp">
+                        <span>Delivery</span>
+                        <strong>902434636</strong>
+                    </div>
+                </a>
+                <a href="carta.html" class="boton-rojo">Mira nuestra carta</a>
+            </div>
+
+        </div>
+    </header>
+
+    <main>
+
+        <!-- MENÚ SUPERIOR -->
+        <nav class="menu">
+            <button class="menu-btn active" data-filter="desayuno">Desayuno</button>
+            <button class="menu-btn" data-filter="almuerzo">Criollos</button>
+            <button class="menu-btn" data-filter="cena">Alitas +</button>
+            <button class="menu-btn" data-filter="kids">Kids</button>
+        </nav>
+
+        <section id="productos" class="grid">
+
+            <!-- DESAYUNO (9) -->
+            <article class="card" data-category="desayuno">
+                <img src="https://images.unsplash.com/photo-1666819604716-7b60a604bb76?q=80&w=687&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Sandiwch Pollo">
+                <h3>Sandiwch Pollo</h3>
+                <p class="price">S/ 9.00</p>
+                <button class="ordenar-btn" data-producto="Sandiwch Pollo">Ordenar ahora</button>
+            </article>
+
+            <article class="card" data-category="desayuno">
+                <img src="https://images.unsplash.com/photo-1650316710473-8b2ecdcd2b10?q=80&w=687&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Nectar Naranja">
+                <h3>Nectar Naranja</h3>
+                <p class="price">S/ 7.00</p>
+                <button class="ordenar-btn" data-producto="Nectar Naranja">Ordenar ahora</button>
+            </article>
+
+            <article class="card" data-category="desayuno">
+                <img src="https://images.unsplash.com/photo-1563690449029-d6e1b8d6003d?q=80&w=1166&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Huevos Revueltos">
+                <h3>Huevos Revueltos</h3>
+                <p class="price">S/ 12.00</p>
+                <button class="ordenar-btn" data-producto="Huevos Revueltos">Ordenar ahora</button>
+            </article>
+
+            <article class="card" data-category="desayuno">
+                <img src="https://images.unsplash.com/photo-1481070414801-51fd732d7184?q=80&w=1024&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Sandwich Jamon">
+                <h3>Sandwich Jamon</h3>
+                <p class="price">S/ 9.50</p>
+                <button class="ordenar-btn" data-producto="Sandwich Jamon">Ordenar ahora</button>
+            </article>
+
+            <article class="card" data-category="desayuno">
+                <img src="https://plus.unsplash.com/premium_photo-1675435644687-562e8042b9db?q=80&w=749&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Café pasado">
+                <h3>Cafe pasado</h3>
+                <p class="price">S/ 5.00</p>
+                <button class="ordenar-btn" data-producto="Café pasado">Ordenar ahora</button>
+            </article>
+
+            <article class="card" data-category="desayuno">
+                <img src="https://d36fw6y2wq3bat.cloudfront.net/recipes/sandwich-de-pavo-queso-y-manzana/900/sandwich-de-pavo-queso-y-manzana_version_1653031846.jpg" alt="Sandiwch Pavo">
+                <h3>Sandiwch Pavo</h3>
+                <p class="price">S/ 12.00</p>
+                <button class="ordenar-btn" data-producto="Emoliente">Ordenar ahora</button>
+            </article>
+
+            <article class="card" data-category="desayuno">
+                <img src="https://i.ytimg.com/vi/3Fp_6Q9D6oQ/maxresdefault.jpg" alt="Emoliente">
+                <h3>Emoliente</h3>
+                <p class="price">S/ 6.00</p>
+                <button class="ordenar-btn" data-producto="Emoliente">Ordenar ahora</button>
+            </article>
+
+            <article class="card" data-category="desayuno">
+                <img src="https://recetasdecocina.elmundo.es/wp-content/uploads/2025/09/pan-con-chicharrones.jpg" alt="Pan con chicarron">
+                <h3>Pan con chicarron</h3>
+                <p class="price">S/ 10.00</p>
+                <button class="ordenar-btn" data-producto="Pan con chicarron">Ordenar ahora</button>
+            </article>
+
+            <article class="card" data-category="desayuno">
+                <img src="https://www.vitamixespana.com/recetas/wp-content/uploads/2025/06/batido-de-coco-y-fresa-1.jpg" alt="Jugo Rosa">
+                <h3>Jugo Rosa</h3>
+                <p class="price">S/ 7.50</p>
+                <button class="ordenar-btn" data-producto="Emoliente">Ordenar ahora</button>
+            </article>
+
+            <!-- CRIOLLOS (9) -->
+            <article class="card" data-category="almuerzo">
+                <img src="https://jameaperu.com/assets/images/lomo-saltado-de-pollo_800x534.webp" alt="Lomo Saltado">
+                <h3>Lomo Saltado</h3>
+                <p class="price">S/ 14.00</p>
+                <button class="ordenar-btn" data-producto="Lomo Saltado">Ordenar ahora</button>
+            </article>
+
+            <article class="card" data-category="almuerzo">
+                <img src="https://jameaperu.com/assets/images/arroz-con-pollo_800x534.webp" alt="Arroz con Pollo">
+                <h3>Arroz con Pollo</h3>
+                <p class="price">S/ 13.00</p>
+                <button class="ordenar-btn" data-producto="Arroz con Pollo">Ordenar ahora</button>
+            </article>
+
+            <article class="card" data-category="almuerzo">
+                <img src="https://micevichedehoy.com/assets/images/ceviche-de-pescado_800x534.webp" alt="Ceviche">
+                <h3>Ceviche</h3>
+                <p class="price">S/ 17.00</p>
+                <button class="ordenar-btn" data-producto="Ceviche">Ordenar ahora</button>
+            </article>
+            
+            <article class="card" data-category="almuerzo">
+                <img src="https://media-cdn.tripadvisor.com/media/photo-m/1280/17/0e/ea/26/aji-de-gallina.jpg" alt="Ají de Gallina">
+                <h3>Ají de Gallina</h3>
+                <p class="price">S/ 15.00</p>
+                <button class="ordenar-btn" data-producto="Ají de Gallina">Ordenar ahora</button>
+            </article>
+
+            <article class="card" data-category="almuerzo">
+                <img src="https://www.comeperuano.pe/wp-content/uploads/2019/10/receta-aeropuerto-peru.jpg" alt="Chaufa">
+                <h3>Chaufa</h3>
+                <p class="price">S/ 13.00</p>
+                <button class="ordenar-btn" data-producto="Chaufa">Ordenar ahora</button>
+            </article>
+
+            <article class="card" data-category="almuerzo">
+                <img src="https://comedera.com/wp-content/uploads/sites/9/2022/06/seco-de-cabrito.jpg" alt="Cabrito">
+                <h3>Cabrito</h3>
+                <p class="price">S/ 18.00</p>
+                <button class="ordenar-btn" data-producto="Cabrito">Ordenar ahora</button>
+            </article>
+
+            <article class="card" data-category="almuerzo">
+                <img src="https://jameaperu.com/assets/images/sopa-shambar_800x534.webp" alt="Shambar">
+                <h3>Shambar</h3>
+                <p class="price">S/ 16.00</p>
+                <button class="ordenar-btn" data-producto="Shambar">Ordenar ahora</button>
+            </article>
+
+            <article class="card" data-category="almuerzo">
+                <img src="https://img.freepik.com/fotos-premium/deliciosa-sopa-pescado-marisco-llamada-chilcano-comida-peruana-decorada-cangrejos_133016-1931.jpg" alt="Chilcano">
+                <h3>Chilcano</h3>
+                <p class="price">S/ 17.00</p>
+                <button class="ordenar-btn" data-producto="Chilcano">Ordenar ahora</button>
+            </article>
+
+            <article class="card" data-category="almuerzo">
+                <img src="https://imag.bonviveur.com/caldo-de-gallina.jpg" alt="Caldo de gallina">
+                <h3>Caldo de gallina</h3>
+                <p class="price">S/ 15.00</p>
+                <button class="ordenar-btn" data-producto="Caldo de gallina">Ordenar ahora</button>
+            </article>
+
+            <!-- ALITAS + (9) -->
+            <article class="card" data-category="cena">
+                <img src="https://574.esbaricafe.com/wp-content/uploads/2025/06/royal.jpg" alt="Hamburguesa Royal">
+                <h3>Hamburguesa Royal</h3>
+                <p class="price">S/ 14.00</p>
+                <button class="ordenar-btn" data-producto="Hamburguesa Royal">Ordenar ahora</button>
+            </article>
+
+            <article class="card" data-category="cena">
+                <img src="https://tofuu.getjusto.com/orioneat-local/resized2/E3mN8sSCycHpPFY3h-2400-x.webp" alt="Jugo Mixto">
+                <h3>Jugo Mixto</h3>
+                <p class="price">S/ 8.00</p>
+                <button class="ordenar-btn" data-producto="Jugo Mixto">Ordenar ahora</button>
+            </article>
+
+            <article class="card" data-category="cena">
+                <img src="https://thumbs.dreamstime.com/b/hamburguesa-de-filete-pollo-y-papas-fritas-en-un-panecillo-brioche-con-tomates-lechuga-queso-piel-patatas-iluminaci%C3%B3n-creativa-206918350.jpg" alt="Hamburguesa Pollo">
+                <h3>Hamburguesa Pollo</h3>
+                <p class="price">S/ 10.00</p>
+                <button class="ordenar-btn" data-producto="Hamburguesa Pollo">Ordenar ahora</button>
+            </article>
+
+            <article class="card" data-category="cena">
+                <img src="https://peru21.pe/sites/default/efsfiles/2023-10/VAS345QKNJBNXNTOGRQUO2RGXY.jpg" alt="Salchipapa suprema">
+                <h3>Salchipapa suprema</h3>
+                <p class="price">S/ 16.00</p>
+                <button class="ordenar-btn" data-producto="Salchiapapa suprema">Ordenar ahora</button>
+            </article>
+
+            <article class="card" data-category="cena">
+                <img src="https://media-cdn.tripadvisor.com/media/photo-s/1d/f1/53/49/deliciosas-alitas-bbq.jpg" alt="Alitas BBQ">
+                <h3>Alitas BBQ</h3>
+                <p class="price">S/ 17.50</p>
+                <button class="ordenar-btn" data-producto="Alitas BBQ">Ordenar ahora</button>
+            </article>
+
+            <article class="card" data-category="cena">
+                <img src="https://tofuu.getjusto.com/orioneat-local/resized2/TjjSq8ScLLNY82fmy-2400-x.webp" alt="Pollo Plancha">
+                <h3>Pollo Plancha</h3>
+                <p class="price">S/ 18.00</p>
+                <button class="ordenar-btn" data-producto="Pollo Plancha">Ordenar ahora</button>
+            </article>
+
+            <article class="card" data-category="cena">
+                <img src="https://i.ytimg.com/vi/bCCLPsf5UVc/maxresdefault.jpg" alt="Alitas Acevichadas">
+                <h3>Alitas Acevichadas</h3>
+                <p class="price">S/ 19.00</p>
+                <button class="ordenar-btn" data-producto="Tacos">Ordenar ahora</button>
+            </article>
+
+            <article class="card" data-category="cena">
+                <img src="https://endulzateperu.com/assets/images/2025/10/chicha-morada-peruana_800x534.webp" alt="Chicha">
+                <h3>Chicha</h3>
+                <p class="price">S/ 8.00</p>
+                <button class="ordenar-btn" data-producto="Chicha">Ordenar ahora</button>
+            </article>
+
+            <article class="card" data-category="cena">
+                <img src="https://cdn7.kiwilimon.com/recetaimagen/33569/960x640/38971.jpg.jpg" alt="Alitas Mango Habanero">
+                <h3>Alitas Mango Habanero</h3>
+                <p class="price">S/ 19.00</p>
+                <button class="ordenar-btn" data-producto="Alitas Mango Habanero">Ordenar ahora</button>
+            </article>
+
+            <!-- KIDS (9) -->
+            <article class="card" data-category="kids">
+                <img src="https://cdn7.kiwilimon.com/ss_secreto/2754/2754.jpg" alt="Nuggets con Papas">
+                <h3>Nuggetcitos</h3>
+                <p class="price">S/ 10.00</p>
+                <button class="ordenar-btn" data-producto="Nuggets con Papas">Ordenar ahora</button>
+            </article>
+
+            <article class="card" data-category="kids">
+                <img src="https://resuelveconbimbo-com-v2-assets.s3.amazonaws.com/s3fs-public/2024-01/Banner%20Desktop_Perro%20con%20Ensalada%20de%20Repollo.webp?VersionId=eKnszNAXmiLWeJFM7QH2Svr9SVywfjLt" alt="Pan Dog">
+                <h3>Pan Dog</h3>
+                <p class="price">S/ 9.00</p>
+                <button class="ordenar-btn" data-producto="Pan Dog">Ordenar ahora</button>
+            </article>
+
+            <article class="card" data-category="kids">
+                <img src="https://i.ytimg.com/vi/RZe_NdtolrM/sddefault.jpg?sqp=-oaymwEmCIAFEOAD8quKqQMa8AEB-AH-CYAC0AWKAgwIABABGEogWihlMA8=&rs=AOn4CLAlIj6bHr12fZk9daWNBxW2uqcPYA" alt="Pollo verdulero">
+                <h3>Pollo Verdulero</h3>
+                <p class="price">S/ 8.50</p>
+                <button class="ordenar-btn" data-producto="Pollo Verdulero">Ordenar ahora</button>
+            </article>
+
+            <article class="card" data-category="kids">
+                <img src="https://img.freepik.com/fotos-premium/alimentacion-saludable-desayuno-merienda-beba-batidos-durazno-fresco-avena_136595-4720.jpg" alt="Duraznito">
+                <h3>Duraznito</h3>
+                <p class="price">S/ 8.50</p>
+                <button class="ordenar-btn" data-producto="Duraznito">Ordenar ahora</button>
+            </article>
+
+            <article class="card" data-category="kids">
+                <img src="https://cdn0.recetasgratis.net/es/posts/7/9/1/dedos_de_queso_36197_600.jpg" alt="Dedos Quesosos">
+                <h3>Dedos Quesosos</h3>
+                <p class="price">S/ 9.00</p>
+                <button class="ordenar-btn" data-producto="Dedos Quesosos">Ordenar ahora</button>
+            </article>
+
+            <article class="card" data-category="kids">
+                <img src="https://media.istockphoto.com/id/1294987507/es/foto/mini-hamburguesa-con-becer%C3%B3n-tomate-y-queso.jpg?s=612x612&w=0&k=20&c=ZtPMFbZ1BQS_WAYV1XEqWJkXfNvB7w89wFXg9OQSrwk=" alt="Mini Burger">
+                <h3>Mini burger</h3>
+                <p class="price">S/ 4.50</p>
+                <button class="ordenar-btn" data-producto="Miniburger">Ordenar ahora</button>
+            </article>
+
+            <article class="card" data-category="kids">
+                <img src="https://thumbs.dreamstime.com/b/un-cl%C3%A1sico-s%C3%A1ndwich-de-mantequilla-cacahuete-y-mermelada-con-gruesas-lonchas-cremosa-gelatina-pan-tostado-crema-man%C3%AD-uva-dulce-382189195.jpg" alt="Dulce Sandwich">
+                <h3>Dulce Sandwich</h3>
+                <p class="price">S/ 4.50</p>
+                <button class="ordenar-btn" data-producto="Dulce Sandwich">Ordenar ahora</button>
+            </article>
+
+            <article class="card" data-category="kids">
+                <img src="https://blueteapot.com/cdn/shop/collections/pexels-treedeo-footage-5418941.jpg?v=1666842782" alt="Chocolatada">
+                <h3>Chocolatada</h3>
+                <p class="price">S/ 4.50</p>
+                <button class="ordenar-btn" data-producto="Chocolatada">Ordenar ahora</button>
+            </article>
+
+            <article class="card" data-category="kids">
+                <img src="https://www.radioromance.com/wp-content/uploads/2025/04/PURE-DE-PAPA.jpg" alt="Papa pure">
+                <h3>Papa pure</h3>
+                <p class="price">S/ 4.50</p>
+                <button class="ordenar-btn" data-producto="Papa pure">Ordenar ahora</button>
+            </article>
+
+        </section>
+
+        <section class="Pie">
+            <p>Estos son los mas pedidos, si desea mayor información, escriba al whatsapp por favor.</p>
+        </section>
+
+    </main>
+
+    <footer class="pie-pagina">
+
+        <div class="contenedor-pie">
+            
+            <div class="columna">
+                <h3>SOBRE NOSOTROS</h3>
+                <p>Cocinamos con pasión desde el 2014. Los mejores ingredientes para ti y tu familia en cada plato.</p>
+            </div>
+
+            <div class="columna">
+                <h3>ENLACES RÁPIDOS</h3>
+                <ul>
+                    <li><a href="index.html">Inicio</a></li>
+                    <li><a href="carta.html">Nuestra Carta</a></li>
+                    <li><a href="atencion.html">Atención Personalizada</a></li>
+                    <li><a href="contactanos.html">Contacto</a></li>
+                </ul>
+            </div>
+
+            <div class="columna">
+                <h3>SÍGUENOS</h3>
+                <div class="redes-sociales">
+                    <a href="https://facebook.com/KFCperu"><i class="fa-brands fa-facebook"></i></a>
+                    <a href="https://instagram.com/kfc.peru"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="https://www.tiktok.com/@kfc.pe"><i class="fa-brands fa-tiktok"></i></a>
+                </div>
+            </div>
+
+        </div>
+        
+        <div class="barra-final">
+            <p>© 2026 La Casa de las Alitas. Todos los derechos reservados.</p>
+        </div>
+
+    </footer>
+
+    <script src="../Proyecto final/js/script.js"></script>
+</body>
+
+</html>

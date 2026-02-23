@@ -1,0 +1,296 @@
+#caja{
+    width: 100%;
+    margin: 0 auto;
+    background-color: #FFF8F0;
+}
+
+body{
+  background-color: #FFF8F0;
+}
+
+
+
+
+/* ====== CONTENIDO BODY ====== */
+.contenedor{
+  width: min(1100px, 100%);
+  margin: 0 auto;
+}
+
+.section{ padding: 42px 0 ; 
+  margin: 40px 0 20px;
+
+}
+
+
+.titulo{
+  margin: 0 0 8px;
+  font-size: 28px;
+  font-weight: 800;
+  text-align: center;
+}
+
+.subtitulo{
+  margin: 0 0 20px;
+  color: #444;
+  line-height: 1.6;
+}
+
+/* ====== SLIDER ====== */
+.slider{ padding: 18px 0 10px; }
+
+.slider__wrap{
+  position: relative;
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  overflow: hidden;
+  border-radius: 14px;
+  border: 1px solid #ddd;
+  background: #000;
+}
+
+/* ocultar todos */
+.sliderbanner{ display: none; }
+/* mostrar el activo */
+.sliderbanner.activo{ display: block; }
+
+.sliderbanner img{
+  width: 100%;
+  height: 340px;
+  display: block;
+}
+
+/* Botones */
+.slider__btn{
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  border: 0;
+  cursor: pointer;
+  font-size: 22px;
+  color: #fff;
+  background: rgba(0,0,0,.55);
+}
+
+.slider__btn.prev{ left: 12px; }
+.slider__btn.next{ right: 12px; }
+
+.slider__btn:hover{ background: rgba(0,0,0,.75); }
+
+/* PUNTOS DEL SLIDER */
+.slider__puntos{
+  position: absolute;
+  left: 50%;
+  bottom: 12px;
+  transform: translateX(-50%);
+  display: flex;
+  gap: 9px;
+}
+
+.punto-slider{
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  border: 0;
+  cursor: pointer;
+  background: rgba(255,255,255,.7);
+}
+
+.punto-slider.activo{ background: #ffb000; }
+
+
+/* ===== INTRODUCCIÓN - INICIO ===== */
+
+.intro-inicio{
+  padding: 45px 0;
+}
+
+.intro-inicio .contenedor{
+  background: #fff;
+  border: 1px solid #e2e2e2;
+  border-radius: 18px;
+  padding: 35px 30px;
+  text-align: center;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.05);
+}
+
+.intro-inicio h2{
+  font-size: 32px;
+  margin-bottom: 15px;
+  font-weight: 800;
+  color: #222;
+}
+
+.intro-inicio p{
+  max-width: 900px;
+  margin: 0 auto;
+  line-height: 1.7;
+  color: #555;
+  font-size: 16px;
+}
+
+/* introducción - inicio*/
+
+
+/* ====== ASIDE 20% + SECTION 80% ====== */
+.bloque-dos-columnas{
+  width: 100%;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 20% 80%;
+  height: 560px;
+}
+
+/* ASIDE */
+.col-aside{
+  height: 100%;
+  background: #fff;
+  border: 1px solid #e2e2e2;
+  border-radius: 14px;
+  padding: 10px;
+}
+
+.banner-vertical{
+  width: 100%;
+  height: 575px;
+  object-fit: cover;
+  border-radius: 12px;
+  display: block;
+}
+
+/* SECTION */
+.col-section{
+  background: #fff;
+  border: 1px solid #e2e2e2;
+  border-radius: 14px;
+  padding: 16px;
+  height: 100%;
+  overflow: hidden;
+  height: 600px;
+}
+
+/* Galería de 2 imágenes */
+.galeria-momentos{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 14px;
+  margin-top: 12px;
+  
+}
+
+.momento{
+  margin: 0;
+  border-radius: 14px;
+  overflow: hidden;
+  border: 1px solid #eee;
+  background: #fff;
+  text-align: center;
+}
+
+.momento img{
+  width: 100%;
+  height: 475px;
+  object-fit: cover;
+  display: block;
+}
+
+.momento figcaption{
+  padding: 10px 12px;
+  font-weight: 700;
+  color: #333;
+}
+
+
+
+/* ====== ¿Porque Elegirnos? ====== */
+.caracteristicas{
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 14px;
+}
+
+.item{
+  background: #fff;
+  border: 1px solid #e2e2e2;
+  border-radius: 14px;
+  padding: 16px;
+}
+
+.item h3{ margin: 0 0 8px; font-size: 18px; }
+.item p{ margin: 0; color: #444; line-height: 1.5; }
+
+/* ====== CTA ====== */
+.promo-final { 
+    padding: 30px 0 55px; 
+}
+
+.promo-final__box {
+    background: #FF6B00; 
+    color: #fff;
+    border-radius: 16px;
+    padding: 22px 30px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 16px;
+    box-shadow: 0 4px 10px rgba(255, 107, 0, 0.2); 
+}
+
+.promo-final__btn {
+    background: #fff;
+    color: #FF6B00;
+    padding: 12px 24px;
+    border-radius: 12px;
+    font-weight: 900;
+    text-decoration: none; 
+    transition: 0.3s;
+}
+
+.promo-final__btn:hover {
+    background: #222;
+    color: #fff;
+}
+
+/* ====== RESPONSIVE ====== */
+@media (max-width: 900px){
+  .sliderbanner img{ height: auto; }
+
+  .caracteristicas{
+    grid-template-columns: 1fr;
+  }
+.bloque-dos-columnas{
+    grid-template-columns: 1fr;
+    height: auto;
+  }
+  .col-aside{
+    height: 320px;        /* altura fija para el banner en móvil */
+    padding: 10px;
+    overflow: hidden;
+  }
+
+  .col-section{
+    height: auto; /* que no fuerce el alto */
+  }
+
+  .galeria-momentos{
+    grid-template-columns: 1fr; /* una imagen por fila */
+  }
+
+  .momento img{
+    height: 260px; /* ✅ evita que se hagan mini */
+  }
+  .promo-final__box{
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .banner-vertical{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;    /* ✅ llena sin deformar */
+    object-position: center;
+  }
+}

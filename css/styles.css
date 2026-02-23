@@ -1,0 +1,172 @@
+
+/*De la carta*/
+
+main {
+    padding: 0;
+    margin: 2% 25% 2% 25%;
+    background-color: #FFF8F0;
+    font-family: Arial, Helvetica, sans-serif;
+    background: #FFF8F0;     /* gris claro de fondo */
+    color: #1f2937;          /* texto principal */
+    line-height: 1.45;
+    padding: 20px 16px;
+}
+
+/* ====== Menú superior ====== */
+.menu {
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-bottom: 40px;
+
+}
+
+.menu-btn {
+    appearance: none;
+    display: inline-flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+
+    width: 160px;
+    border: 2px solid #e5e7eb;   /* borde gris */
+    background: #ffffff;         /* fondo blanco */
+    color: #1f2937;              /* texto */
+    padding: 1.5% 4% 1.5% 4%;;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 90%;
+    font-weight: 600;
+    letter-spacing: 0.3px;
+    transition:
+      border-color 0.2s ease,
+      background-color 0.2s ease,
+      color 0.2s ease,
+      transform 0.06s ease,
+      box-shadow 0.2s ease;
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.06);
+}
+
+.menu-btn:hover {
+    border-color: #cfd4dc;
+    transform: translateY(-1px);
+}
+
+.menu-btn:active {
+    transform: translateY(0);
+}
+
+.menu-btn:focus-visible {
+    outline: 2px solid #818181;  /* énfasis accesible */
+    outline-offset: 2px;
+}
+
+.menu-btn.active {
+    background: #E63900;         /* naranja activo */
+    border-color: #ff7f00;
+    color: #ffffff;
+    box-shadow: 0 6px 20px rgba(0,0,0,0.08);
+}
+
+/* ====== Grid de productos ====== */
+.grid {
+    display: grid;
+    gap: 25px;
+    grid-template-columns: repeat(3, minmax(0, 1fr)); /* 3 col desktop */
+}
+
+/* Responsivo: tablet y móvil */
+@media (max-width: 980px) {
+    .grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+}
+@media (max-width: 580px) {
+    .grid { grid-template-columns: 1fr; }
+}
+
+/* ====== Tarjeta de producto ====== */
+.card {
+    display: flex;
+    flex-direction: column;
+    background: #ffffff;
+    border: 1px solid #c4c4c4;
+    border-radius: 10px;
+    overflow: hidden; /* recorta imagen si se sale */
+    box-shadow: 0 1px 2px rgba(0,0,0,0.06);
+    transition: transform 0.15s ease, box-shadow 0.15s ease, border-color 0.15s ease;
+}
+
+.card:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 20px rgba(0,0,0,0.08);
+    border-color: #dfe3ea;
+}
+
+/* Importante: en el HTML usa <img src="..."> dentro de .card */
+.card img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+    display: block;
+    background: #eeeeee;
+}
+
+/* Contenido de la card */
+.card h3 {
+    font-size: 1.02rem;
+    margin: 12px 14px 4px 14px;
+}
+
+.price {
+    margin: 0 14px 12px 14px;
+    font-weight: 700;
+    color: #1f2937;
+    display: inline-block;
+    background: #fff3e6;  /* tinte suave del naranja */
+    border-radius: 999px;
+    padding: 6px 10px;
+}
+
+/* Botón de acción */
+.ordenar-btn {
+    margin: 0 14px 14px 14px;
+    padding: 10px 14px;
+    border: none;
+    border-radius: 6px;
+    background: #fd7041;
+    color: #ffffff;
+    font-weight: 700;
+    cursor: pointer;
+    transition: background-color 0.2s ease, transform 0.06s ease, box-shadow 0.2s ease;
+    box-shadow: 0 1px 2px rgba(0,0,0,0.06);
+}
+
+.ordenar-btn:hover {
+    background: #E63900;  /* un poco más oscuro al hover */
+}
+
+.ordenar-btn:active {
+    transform: translateY(1px);
+}
+
+.ordenar-btn:focus-visible {
+    outline: 2px solid #f76b3c;
+    outline-offset: 2px;
+}
+
+/* Utilidad que usa el JS para ocultar tarjetas al filtrar */
+.hidden {
+    display: none !important;
+}
+
+.Pie{
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    color: #3a3a3a;
+    margin-top: 20px;
+    font-style: italic;
+}

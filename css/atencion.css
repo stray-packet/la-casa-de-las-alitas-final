@@ -1,0 +1,107 @@
+/* ====== SECCIÓN FORMULARIO ====== */
+
+main {
+  background-color: #FFF8F0;
+  padding: 60px 0;
+}
+
+.formulario-atencion {
+  width: min(900px, 92%);
+  margin: 0 auto;
+  background: #fff;
+  border: 1px solid #e2e2e2;
+  border-radius: 14px;
+  padding: 30px;
+}
+
+/* Título */
+.formulario-atencion h1 {
+  margin: 0 0 20px;
+  font-size: 28px;
+  font-weight: 800;
+}
+
+/* Fieldset */
+.formulario-atencion fieldset {
+  border: none;
+  margin-bottom: 25px;
+}
+
+/* Legend */
+.formulario-atencion legend {
+  font-weight: 800;
+  margin-bottom: 15px;
+  color: #143642;
+}
+
+/* Labels */
+.formulario-atencion label {
+  display: block;
+  margin-bottom: 6px;
+  font-weight: 600;
+}
+
+/* Inputs */
+.formulario-atencion input,
+.formulario-atencion select,
+.formulario-atencion textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #e2e2e2;
+  border-radius: 8px;
+  font-size: 14px;
+  transition: 0.3s ease;
+}
+
+/* Focus estilo index */
+.formulario-atencion input:focus,
+.formulario-atencion select:focus,
+.formulario-atencion textarea:focus {
+  border-color: #143642;
+  outline: none;
+}
+
+/* Radios */
+.formulario-atencion input[type="radio"] {
+  width: auto;
+  margin-right: 5px;
+}
+
+/* Botones */
+.formulario-atencion .botones {
+  display: flex;
+  gap: 12px;
+  margin-top: 10px;
+}
+
+.formulario-atencion input[type="submit"],
+.formulario-atencion input[type="reset"] {
+  flex: 1;
+  padding: 12px;
+  border: none;
+  border-radius: 8px;
+  font-weight: 700;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+/* Botón principal (como menú) */
+.formulario-atencion input[type="submit"] {
+  background-color: #E63900;
+  color: white;
+}
+
+.formulario-atencion input[type="submit"]:hover {
+  background-color: #fd7041;
+}
+
+/* Botón secundario */
+.formulario-atencion input[type="reset"] {
+  background-color: #ffb000;
+  color: #111;
+}
+
+.formulario-atencion input[type="reset"]:hover {
+  opacity: 0.85;
+}
